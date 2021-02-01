@@ -30,8 +30,6 @@ ENV BITNAMI_APP_NAME="postgresql-repmgr" \
     NSS_WRAPPER_LIB="/opt/bitnami/common/lib/libnss_wrapper.so" \
     PATH="/opt/bitnami/postgresql/bin:/opt/bitnami/repmgr/bin:/opt/bitnami/common/bin:$PATH"
 
-RUN add-apt-repository "deb http://ftp.debian.org/debian testing main contrib" && apt-get update && apt-get install -y libprotobuf-c-dev=1.2.1-1+b1 protobuf-c-compiler=1.2.*
-
 EXPOSE 5432
 
 USER 1001
